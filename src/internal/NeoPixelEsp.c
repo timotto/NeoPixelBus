@@ -43,9 +43,10 @@ inline uint32_t _getCycleCount()
     return ccount;
 }
 
-#define CYCLES_800_T0H  (F_CPU / 2500000) // 0.4us
+// LED_WS2813_V2 - almost ok
+#define CYCLES_800_T0H  (F_CPU / 3703704) // 0.27us
 #define CYCLES_800_T1H  (F_CPU / 1250000) // 0.8us
-#define CYCLES_800      (F_CPU /  800000) // 1.25us per bit
+#define CYCLES_800      (F_CPU /  934579) // 1.07us per bit
 #define CYCLES_400_T0H  (F_CPU / 2000000)
 #define CYCLES_400_T1H  (F_CPU /  833333)
 #define CYCLES_400      (F_CPU /  400000) 
